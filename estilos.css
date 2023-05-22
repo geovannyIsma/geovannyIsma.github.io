@@ -1,0 +1,63 @@
+h1 {
+    color: rgb(0, 0, 0);
+    font-family: roboto;
+    font-size: 52px;
+}
+h2 {
+    font-family: roboto;
+    font-size: 33px;
+}
+
+body {
+    text-align: center;
+    opacity: 0.2;
+    transition: opacity 1s ease;
+ 
+}
+
+body:hover, body:focus {
+    opacity: 1;
+}
+
+
+p {
+    font-family: open sans;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 20px auto;
+    background-color: #cdc1c1e8;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-image img {
+    max-width: 100%;
+  }
+
+#about-me {
+    width: 500PX;
+    height: 220PX;
+    margin: 20px auto;
+    background-color: rgb(21, 185, 194);
+    color: white;
+    padding: 0.5px;
+    font-family: open sans;   
+    font-size: 18px;
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* Sombra del div */
+}
+
+#details {
+    margin-top: 20px;
+    font-family: open sans;
+    font-size: 18px;
+}
+
+.cuadro {
+    background-color: #ffffff; /* Color de fondo del div */
+    box-shadow: 0 2px 90px rgba(0, 0, 0, 0.4); /* Sombra del div */
+}
