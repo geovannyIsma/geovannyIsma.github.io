@@ -1,63 +1,158 @@
-h1 {
-    color: rgb(0, 0, 0);
-    font-family: roboto;
-    font-size: 52px;
-}
-h2 {
-    font-family: roboto;
-    font-size: 33px;
-}
-
 body {
     text-align: center;
-    opacity: 0.2;
-    transition: opacity 1s ease;
- 
+    opacity: 0.9; /* Ajustar la opacidad inicial */
+    background-color: #f4f4f9; /* Fondo claro */
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-body:hover, body:focus {
-    opacity: 1;
+h1 {
+    color: #333;
+    font-size: 48px;
+    margin-top: 20px;
 }
 
+h2 {
+    color: #444;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
 
 p {
-    font-family: open sans;
+    font-family: 'Open Sans', sans-serif;
+    color: #555;
+    line-height: 1.6;
 }
 
 .profile-image {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     margin: 20px auto;
-    background-color: #cdc1c1e8;
-    border-radius: 50%;
+    border: 3px solid #21b9c2;
     overflow: hidden;
 }
 
 .profile-image img {
-    max-width: 100%;
-  }
+    width: 100%;
+    height: auto;
+}
 
 #about-me {
-    width: 500PX;
-    height: 220PX;
+    width: 80%;
+    max-width: 600px;
     margin: 20px auto;
-    background-color: rgb(21, 185, 194);
+    background-color: #21b9c2;
     color: white;
-    padding: 0.5px;
-    font-family: open sans;   
-    font-size: 18px;
-
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* Sombra del div */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 #details {
-    margin-top: 20px;
-    font-family: open sans;
-    font-size: 18px;
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#details p {
+    margin: 5px 0;
 }
 
 .cuadro {
-    background-color: #ffffff; /* Color de fondo del div */
-    box-shadow: 0 2px 90px rgba(0, 0, 0, 0.4); /* Sombra del div */
+    background-color: transparent; /* Eliminar fondo redundante */
+}
+
+body.dark-theme {
+    background-color: #333;
+    color: #f4f4f9;
+}
+
+body.dark-theme h1, body.dark-theme h2 {
+    color: #f4f4f9;
+}
+
+body.dark-theme #about-me {
+    background-color: #444;
+}
+
+body.dark-theme #details {
+    background-color: #555;
+}
+
+#projects {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#projects h2 {
+    color: #444;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+#projects ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#projects li {
+    margin: 10px 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #555;
+}
+
+#projects a {
+    color: #21b9c2;
+    text-decoration: none;
+}
+
+#projects a:hover {
+    text-decoration: underline;
+}
+
+.project-image {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+
+#technologies {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tech-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tech-item {
+    text-align: center;
+    width: 100px;
+}
+
+.tech-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
 }
